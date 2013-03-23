@@ -72,6 +72,10 @@ To speed up the startup process use ```$ vagrant up --no-provision``` (thanks to
 * Reset repository to restore project files
     
     ```$ cd /vagrant/www && git reset --hard HEAD```
+
+* Install dependencies
+
+    ```$ cd /vagrant/www && composer update```
     
 * Edit ```web/app_dev.php``` to allow host
 
