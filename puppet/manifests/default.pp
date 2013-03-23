@@ -121,9 +121,9 @@ class php-setup {
         require => Package["imagemagick"],
     }
 
-    package { "phpmyadmin"
+    package { "phpmyadmin":
         ensure => present,
-        require => Package[$php]
+        require => Package[$php],
     }
 
     exec { 'pecl install mongo':
@@ -191,7 +191,7 @@ class composer {
         require => [Package['php5-cli'], Package['curl']],
     }
 
-    exec { 'update composer with self-update'
+    exec { 'update composer with self-update':
         command => 'composer self-update',
         require => Exec['install composer php dependency management'],
     }
@@ -214,4 +214,5 @@ include dev-packages
 include nginx-setup
 include php-setup
 include composer
+include phpqatools
 include memcached
