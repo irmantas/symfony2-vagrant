@@ -190,11 +190,6 @@ class composer {
         command => 'curl -s http://getcomposer.org/installer | php -- --install-dir=/usr/bin && mv /usr/bin/composer.phar /usr/bin/composer',
         require => [Package['php5-cli'], Package['curl']],
     }
-
-    exec { 'update composer with self-update':
-        command => 'composer self-update',
-        require => Exec['install composer php dependency management'],
-    }
 }
 
 class memcached {
