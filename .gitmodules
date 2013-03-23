@@ -10,3 +10,15 @@
 [submodule "puppet/modules/varnish"]
 	path = puppet/modules/varnish
 	url = https://github.com/zylon-internet/puppet-varnish.git
+[submodule "puppet/modules/pear"]
+	path = puppet/modules/pear
+	url = https://github.com/rafaelfelix/puppet-pear.git
+[submodule "puppet/modules/apt"]
+	path = puppet/modules/apt
+	url = https://github.com/puppetlabs/puppetlabs-apt
+[submodule "puppet/modules/phpqatools"]
+	path = puppet/modules/phpqatools
+	url = https://github.com/rafaelfelix/puppet-phpqatools
+[submodule "puppet/modules/puppetlabs-stdlib"]
+	path = puppet/modules/puppetlabs-stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
