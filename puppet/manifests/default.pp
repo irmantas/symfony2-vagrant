@@ -121,6 +121,11 @@ class php-setup {
         require => Package["imagemagick"],
     }
 
+    package { "phpmyadmin"
+        ensure => present,
+        require => Package[$php]
+    }
+
     exec { 'pecl install mongo':
         notify => Service["php5-fpm"],
         command => '/usr/bin/pecl install --force mongo',
@@ -198,12 +203,11 @@ class memcached {
     }
 }
 
-class { 'varnish':
-    if $use_varnish == 'false' {
-        disable => true
-    }
-    source => [ "puppet:///files/varnish/varnish.conf" ], 
+class { 'apt':
+    always_apt_update    => true
 }
+
+Exec["apt-get update"] -> Package <| |>
 
 include system-update
 include dev-packages
