@@ -51,9 +51,10 @@
 
 ## Thanks to
 
-* [example42](https://github.com/example42)
-* [caramba1337](https://github.com/caramba1337)
-* [kertz](https://github.com/kertz)
+* [example42](https://github.com/example42) - for great nginx\mysql templates
+* [caramba1337](https://github.com/caramba1337) - for great ideas
+* [kertz](https://github.com/kertz) - for great ideas
+* [Markus Fischer](https://github.com/mfn) - for contribution
 
 ## Hints
 ####Startup speed
