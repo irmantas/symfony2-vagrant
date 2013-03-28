@@ -1,0 +1,9 @@
+#
+# Settings for the sphinxsearch searchd daemon
+# Please read /usr/share/doc/sphinxsearch/README.Debian for details.
+#
+
+# Should sphinxsearch run automatically on startup? (default: no)
+# Before doing this you might want to modify /etc/sphinxsearch/sphinx.conf
+# so that it works for you.
+START=yes

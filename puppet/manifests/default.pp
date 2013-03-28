@@ -199,6 +199,37 @@ class memcached {
     }
 }
 
+class sphinx {
+    exec { 'sphinxsearch':
+        ensure => present,
+    }
+
+    file { '/etc/sphinxsearch/sphinx.conf':
+        notify => Service['searchd'],
+        owner  => root,
+        group  => root,
+        ensure => file,
+        mode   => 644,
+        source => '/vagrant/sphinx/sphinx.conf',
+        require => Exec['sphinxsearch'],
+    }
+
+    file { '/etc/default/sphinxsearch':
+        notify => Service['searchd'],
+        owner  => root,
+        group  => root,
+        ensure => file,
+        mode   => 644,
+        source => '/vagrant/sphinx/default/sphinxsearch',
+        require => Exec['sphinxsearch'],
+    }
+
+    service { 'searchd':
+        ensure => running,
+        require => Exec["sphinxsearch"],
+    }
+}
+
 class { 'apt':
     always_apt_update    => true
 }
