@@ -243,3 +243,4 @@ include php-setup
 include composer
 include phpqatools
 include memcached
+include sphinx
