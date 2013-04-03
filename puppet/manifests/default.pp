@@ -200,7 +200,7 @@ class memcached {
 }
 
 class sphinx {
-    exec { 'sphinxsearch':
+    package { 'sphinxsearch':
         ensure => present,
     }
 
@@ -210,8 +210,8 @@ class sphinx {
         group  => root,
         ensure => file,
         mode   => 644,
-        source => '/vagrant/sphinx/sphinx.conf',
-        require => Exec['sphinxsearch'],
+        source => '/vagrant/files/sphinx/sphinx.conf',
+        require => Package['sphinxsearch'],
     }
 
     file { '/etc/default/sphinxsearch':
@@ -220,13 +220,13 @@ class sphinx {
         group  => root,
         ensure => file,
         mode   => 644,
-        source => '/vagrant/sphinx/default/sphinxsearch',
-        require => Exec['sphinxsearch'],
+        source => '/vagrant/files/sphinx/default/sphinxsearch',
+        require => Package['sphinxsearch'],
     }
 
     service { 'searchd':
         ensure => running,
-        require => Exec["sphinxsearch"],
+        require => Package["sphinxsearch"],
     }
 }
 
