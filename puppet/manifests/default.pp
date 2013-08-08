@@ -191,6 +191,11 @@ class composer {
         creates => '/usr/bin/composer',
         require => [Package['php5-cli'], Package['curl']],
     }
+
+    exec { 'composer self update':
+        command => 'composer self-update',
+        require => [Package['php5-cli'], Package['curl'], Exec['install composer php dependency management']],
+    }
 }
 
 class memcached {
