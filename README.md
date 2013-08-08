@@ -32,6 +32,7 @@
 * [PHP-FPM](http://php-fpm.org/) (PHP 5.4)
 * [PhpMyAdmin](http://www.phpmyadmin.net/home_page/index.php)
 * [MongoDB](http://www.mongodb.org/)
+* [Redis](http://redis.io/)
 * [GiT](http://git-scm.com/)
 * [Composer](http://getcomposer.org) installed globaly (use ```$ composer self-update``` to get the newest version)
 * [Vim](http://www.vim.org/)
