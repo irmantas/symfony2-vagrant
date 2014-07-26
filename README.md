@@ -5,6 +5,10 @@
 ####This setup is based and tested with Ubuntu Precise 64 bit base box, with Vagrant 1.0.5 version (should be vorking with 1.1)
 
 * Install Vagrant using using the [installation instructions](http://docs.vagrantup.com/v2/installation/index.html)
+
+* If you are on Windows OS install NFS support plugin [more information and detailed installation instructions](https://github.com/GM-Alex/vagrant-winnfsd):
+    ```vagrant plugin install vagrant-winnfsd```
+
 * Clone this repository
 
     ```$ git clone https://github.com/irmantas/symfony2-vagrant.git```
@@ -56,6 +60,7 @@
 * [caramba1337](https://github.com/caramba1337) - for great ideas
 * [kertz](https://github.com/kertz) - for great ideas
 * [Markus Fischer](https://github.com/mfn) - for contribution
+* [Gustavo Schirmer](https://github.com/hurrycaner) - for contribution
 
 ## Hints
 ####Startup speed
