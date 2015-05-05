@@ -4,7 +4,7 @@
 ## Installation
 ####This setup is based and tested with Ubuntu Precise 64 bit base box, with Vagrant 1.0.5 version (should be working with 1.1)
 
-* Install Vagrant using using the [installation instructions](http://docs.vagrantup.com/v2/installation/index.html)
+* Install Vagrant using the [installation instructions](http://docs.vagrantup.com/v2/installation/index.html)
 
 * If you are on Windows OS install NFS support plugin [more information and detailed installation instructions](https://github.com/GM-Alex/vagrant-winnfsd):
     ```vagrant plugin install vagrant-winnfsd```
@@ -38,7 +38,7 @@
 * [MongoDB](http://www.mongodb.org/)
 * [Redis](http://redis.io/)
 * [GiT](http://git-scm.com/)
-* [Composer](http://getcomposer.org) installed globaly (use ```$ composer self-update``` to get the newest version)
+* [Composer](http://getcomposer.org) installed globally (use ```$ composer self-update``` to get the newest version)
 * [Vim](http://www.vim.org/)
 * [PEAR](http://pear.php.net/)
 * [cURL](http://curl.haxx.se/)
