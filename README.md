@@ -14,7 +14,7 @@
     ```$ git clone https://github.com/irmantas/symfony2-vagrant.git```
     
 * install git submodules
-    ```$ git submodule update --init```
+    ```$ cd symfony2-vagrant && git submodule update --init```
 
 * run vagrant (for the first time it should take up to 10-15 min)
     ```$ vagrant up```
